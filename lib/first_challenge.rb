@@ -18,7 +18,12 @@ def first_challenge
   contacts.each do |key, val|
     if key == "Freddy Mercury"
       val.each do |prop, person_val|
+<<<<<<< HEAD
         if prop == :favorite_icecream_flavors
+=======
+        puts(prop.strip,"favorite_icecream_flavors")
+        if prop == "favorite_icecream_flavors"
+>>>>>>> d866ed88d65b047eaaf06a5e03b0b41ed06055b5
           person_val.delete_if { |flavor|
             flavor == "strawberry"
           }
